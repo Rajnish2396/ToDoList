@@ -1,0 +1,74 @@
+#root{
+width:100%;
+}
+header{
+  width:100%;
+  text-align:center;
+  font-size:60px;
+  font-weight:bold;
+  padding-bottom:20px;
+}
+.todoAddBox{
+  display:grid;
+  grid-template-columns:2.5fr 0.5fr;
+  align-items:center;
+  justify-content:space-between;
+  background:#f1f1f1;
+  overflow: hidden;
+  padding:10px 30px;
+  border-radius: 50px;
+  max-width:800px;
+  margin:auto;
+
+}
+.todoAddBox input{
+  height:100%;
+  border-radius: 50px;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+  outline:none;
+  font-size:20px;
+  
+}
+.todoAddBox button{
+  border: none;
+  text-align: right;
+  font-size: 27px;
+  padding: 10px 0;
+  color:#666;
+  border:none;
+  box-shadow:none;
+}
+main{
+  max-width:1200px;
+  margin:auto;
+}
+.todo-list{
+  display:grid;
+  gap:15px;
+  margin-top:50px;
+}
+.todo-item{
+  border:solid 1px #f1f1f1;
+  padding:25px;
+  display:grid;
+  grid-template-columns:2.5fr 0.25fr; 
+  align-items:center;
+  border-radius:6px;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */  
+}
+.buttons{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  /* grid-template-columns:repeat(1fr, 1fr); */
+}
+.danger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 30px;
+    color: red;
+}
