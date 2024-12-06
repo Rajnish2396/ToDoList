@@ -6,8 +6,8 @@ import { Context } from './context/Context'
 
 function App() {
 
-  const [todoDataList, setDataList] = useState(JSON.parse(localStorage.getItem("key")))
-   const app_Form_Lift =[todoDataList, setDataList]
+  const [todoDataList, setDataList] = useState(JSON.parse(localStorage.getItem("key"))||[])
+  const app_Form_Lift =[todoDataList, setDataList]
   
 
 
